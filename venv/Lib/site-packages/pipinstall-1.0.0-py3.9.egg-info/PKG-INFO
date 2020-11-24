@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pipinstall
+Version: 1.0.0
+Summary: Installs pip packages on all your installed Python versions (Windows only)
+Home-page: https://github.com/gaming32/pipinstall
+Author: Gaming32
+Author-email: gaming32i64@gmail.com
+License: License :: OSI Approved :: MIT License
+Description: # Running
+        Basic usage: `python -m pipinstall <packages>`.
+        Run `python -m pipinstall --help` for more info.
+        ## Uninstalling Packages
+        To uninstall packages either run `pipuninstall` instead, or pass the `--uninstall` flag to `pipinstall`.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
