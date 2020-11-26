@@ -85,7 +85,7 @@ def miner():
     miner = []
     logger.info("区块奖励：" + block[0] + "全网24h挖矿收益：" + block[1])
 
-    miner_id = ['f01155', 'f029585', 'f010202', 'f014699', 'f014686', 'f060805', 'f010038']
+    miner_id = ['f01155', 'f029585', 'f010202', 'f014699', 'f014686', 'f060805', 'f086204', 'f082730', 'f010038']
     for id in miner_id:
         miner_html = get_html_miner_text(FilFox + "address/" + id)
         miner_info = get_miner_info(miner_html, id)
@@ -97,10 +97,9 @@ def miner():
         miner.append(miner_tmp)
     miner_tmp = get_network_info(fil_fox)
 
-    miner.append("区块奖励：" + miner_tmp[0]+"全网平均挖矿效率："+miner_tmp[1])
+    miner.append("区块奖励：" + miner_tmp[0] + "全网平均挖矿效率：" + miner_tmp[1])
     m = miner[0] + '\n' + miner[1] + '\n' + miner[2] + '\n' + miner[3] + '\n' + miner[4] + '\n' + miner[5] + '\n' + \
-        miner[6]+'\n'+miner[7]
-
+        miner[6] + '\n' + miner[7] + '\n' + miner[8] + miner[9]
     return m
 
 
@@ -121,8 +120,8 @@ if __name__ == '__main__':
         if time_now == "00:05":
             info = miner()
             data = {
-                 "title": "每日节点汇报",
-                 "text": "%s" % info
+                "title": "每日节点汇报",
+                "text": "%s" % info
             }
             feishu(data)
             time.sleep(58)
