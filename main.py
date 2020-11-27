@@ -99,7 +99,7 @@ def miner():
 
     miner.append("区块奖励：" + miner_tmp[0] + "全网平均挖矿效率：" + miner_tmp[1])
     m = miner[0] + '\n' + miner[1] + '\n' + miner[2] + '\n' + miner[3] + '\n' + miner[4] + '\n' + miner[5] + '\n' + \
-        miner[6] + '\n' + miner[7] + '\n' + miner[8] + miner[9]
+        miner[6] + '\n' + miner[7] + '\n' + miner[8] + '\n' + miner[9]
     return m
 
 
@@ -117,7 +117,7 @@ if __name__ == '__main__':
     # 定时执行任务
     while True:
         time_now = time.strftime("%H:%M", time.localtime())
-        if time_now == "00:05":
+        if time_now == "22:21":
             info = miner()
             data = {
                 "title": "每日节点汇报",
